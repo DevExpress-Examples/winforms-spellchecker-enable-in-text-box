@@ -7,7 +7,6 @@
 
 
 <p>This example illustrates how to load multiple <a href="http://documentation.devexpress.com/#WindowsForms/CustomDocument8581"><u>Dictionaries</u></a> to check spelling of a multi-language text in a simple text box control. Also, you will see how to add a Custom Dictionary so that the end-user can add custom words to it. </p>
-
 <br/>
-
+<p> Make sure that the "Copy to Output Directory" option for the dictionary files is set to "If Newer". This action prevents custom dictionary files from being overwritten. </p>
 
