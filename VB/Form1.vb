@@ -10,10 +10,10 @@ Namespace SpellCheckerExample
 
         Public Sub New()
             InitializeComponent()
-            memoEditToCheck.Text = "This help system provides a a comprehansive information on using the XtraSpellChecker prodact (http:
-It contains a detailed description of the product's API, and also provides examples with step-by-step instractions, screenshot images and source code (both, C# and Visual Basic).
-
-El asistete realiza automáticamente las modificacines en los ficheros de configuración. Si desea realizar una instalción manual siga estas instruciones:" 'help.devexpress.com/#WindowsForms/CustomDocument2635).
+            memoEditToCheck.Text = "This help system provides a a comprehansive information on using the XtraSpellChecker prodact (http://help.devexpress.com/#WindowsForms/CustomDocument2635). " & ControlChars.CrLf & _
+"It contains a detailed description of the product's API, and also provides examples with step-by-step instractions, screenshot images and source code (both, C# and Visual Basic)." & ControlChars.CrLf & _
+ControlChars.CrLf & _
+"El asistete realiza automáticamente las modificacines en los ficheros de configuración. Si desea realizar una instalción manual siga estas instruciones:"
 
             LoadOpenOfficeDictionaries()
 

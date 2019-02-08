@@ -35,14 +35,14 @@
             Me.layoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.layoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.layoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
-            CType(Me.memoEditToCheck.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.cmbDictionaryType.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.Form1layoutControl1ConvertedLayout, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(Me.memoEditToCheck.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(Me.cmbDictionaryType.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(Me.Form1layoutControl1ConvertedLayout, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Form1layoutControl1ConvertedLayout.SuspendLayout()
-            CType(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
+            DirectCast(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' spellChecker1
@@ -148,14 +148,14 @@
             Me.Margin = New System.Windows.Forms.Padding(2)
             Me.Name = "Form1"
             Me.Text = "XtraSpellChecker Example"
-            CType(Me.memoEditToCheck.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.cmbDictionaryType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.Form1layoutControl1ConvertedLayout, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(Me.memoEditToCheck.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(Me.cmbDictionaryType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(Me.Form1layoutControl1ConvertedLayout, System.ComponentModel.ISupportInitialize).EndInit()
             Me.Form1layoutControl1ConvertedLayout.ResumeLayout(False)
-            CType(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
+            DirectCast(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
 
         End Sub
