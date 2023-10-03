@@ -1,5 +1,7 @@
-﻿Namespace SpellCheckerExample
-    Partial Public Class Form1
+Namespace SpellCheckerExample
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,21 +12,21 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
         ''' </summary>
         Private Sub InitializeComponent()
             Me.components = New System.ComponentModel.Container()
-            Dim optionsSpelling1 As New DevExpress.XtraSpellChecker.OptionsSpelling()
+            Dim optionsSpelling1 As DevExpress.XtraSpellChecker.OptionsSpelling = New DevExpress.XtraSpellChecker.OptionsSpelling()
             Me.spellChecker1 = New DevExpress.XtraSpellChecker.SpellChecker(Me.components)
             Me.memoEditToCheck = New DevExpress.XtraEditors.MemoEdit()
             Me.btnCheck = New DevExpress.XtraEditors.SimpleButton()
@@ -35,14 +37,14 @@
             Me.layoutControlItem1 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.layoutControlItem2 = New DevExpress.XtraLayout.LayoutControlItem()
             Me.layoutControlItem3 = New DevExpress.XtraLayout.LayoutControlItem()
-            CType(Me.memoEditToCheck.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.cmbDictionaryType.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.Form1layoutControl1ConvertedLayout, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.memoEditToCheck.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.cmbDictionaryType.Properties), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.Form1layoutControl1ConvertedLayout), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.Form1layoutControl1ConvertedLayout.SuspendLayout()
-            CType(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).BeginInit()
-            CType(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlGroup1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem2), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.layoutControlItem3), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' spellChecker1
@@ -71,6 +73,7 @@
             Me.btnCheck.StyleController = Me.Form1layoutControl1ConvertedLayout
             Me.btnCheck.TabIndex = 2
             Me.btnCheck.Text = "Check"
+            AddHandler Me.btnCheck.Click, New System.EventHandler(AddressOf Me.btnCheck_Click)
             ' 
             ' defaultLookAndFeel1
             ' 
@@ -81,13 +84,14 @@
             Me.cmbDictionaryType.EditValue = "OpenOffice"
             Me.cmbDictionaryType.Location = New System.Drawing.Point(91, 296)
             Me.cmbDictionaryType.Name = "cmbDictionaryType"
-            Me.cmbDictionaryType.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() { New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
+            Me.cmbDictionaryType.Properties.Buttons.AddRange(New DevExpress.XtraEditors.Controls.EditorButton() {New DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)})
             Me.cmbDictionaryType.Properties.DropDownRows = 3
-            Me.cmbDictionaryType.Properties.Items.AddRange(New Object() { "ISpell", "OpenOffice", "HunSpell"})
+            Me.cmbDictionaryType.Properties.Items.AddRange(New Object() {"ISpell", "OpenOffice", "HunSpell"})
             Me.cmbDictionaryType.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor
             Me.cmbDictionaryType.Size = New System.Drawing.Size(127, 20)
             Me.cmbDictionaryType.StyleController = Me.Form1layoutControl1ConvertedLayout
             Me.cmbDictionaryType.TabIndex = 4
+            AddHandler Me.cmbDictionaryType.SelectedIndexChanged, New System.EventHandler(AddressOf Me.cmbDictionaryType_SelectedIndexChanged)
             ' 
             ' Form1layoutControl1ConvertedLayout
             ' 
@@ -103,9 +107,9 @@
             ' 
             ' layoutControlGroup1
             ' 
-            Me.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True
+            Me.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.[True]
             Me.layoutControlGroup1.GroupBordersVisible = False
-            Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() { Me.layoutControlItem1, Me.layoutControlItem2, Me.layoutControlItem3})
+            Me.layoutControlGroup1.Items.AddRange(New DevExpress.XtraLayout.BaseLayoutItem() {Me.layoutControlItem1, Me.layoutControlItem2, Me.layoutControlItem3})
             Me.layoutControlGroup1.Location = New System.Drawing.Point(0, 0)
             Me.layoutControlGroup1.Name = "layoutControlGroup1"
             Me.layoutControlGroup1.Size = New System.Drawing.Size(407, 330)
@@ -148,30 +152,36 @@
             Me.Margin = New System.Windows.Forms.Padding(2)
             Me.Name = "Form1"
             Me.Text = "XtraSpellChecker Example"
-            CType(Me.memoEditToCheck.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.cmbDictionaryType.Properties, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.Form1layoutControl1ConvertedLayout, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.memoEditToCheck.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.cmbDictionaryType.Properties), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.Form1layoutControl1ConvertedLayout), System.ComponentModel.ISupportInitialize).EndInit()
             Me.Form1layoutControl1ConvertedLayout.ResumeLayout(False)
-            CType(Me.layoutControlGroup1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutControlItem1, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutControlItem2, System.ComponentModel.ISupportInitialize).EndInit()
-            CType(Me.layoutControlItem3, System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlGroup1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem2), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.layoutControlItem3), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
-
         End Sub
 
-        #End Region
-
+#End Region
         Private spellChecker1 As DevExpress.XtraSpellChecker.SpellChecker
+
         Private memoEditToCheck As DevExpress.XtraEditors.MemoEdit
-        Private WithEvents btnCheck As DevExpress.XtraEditors.SimpleButton
+
+        Private btnCheck As DevExpress.XtraEditors.SimpleButton
+
         Private defaultLookAndFeel1 As DevExpress.LookAndFeel.DefaultLookAndFeel
-        Private WithEvents cmbDictionaryType As DevExpress.XtraEditors.ComboBoxEdit
+
+        Private cmbDictionaryType As DevExpress.XtraEditors.ComboBoxEdit
+
         Private Form1layoutControl1ConvertedLayout As DevExpress.XtraLayout.LayoutControl
+
         Private layoutControlGroup1 As DevExpress.XtraLayout.LayoutControlGroup
+
         Private layoutControlItem1 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem2 As DevExpress.XtraLayout.LayoutControlItem
+
         Private layoutControlItem3 As DevExpress.XtraLayout.LayoutControlItem
     End Class
 End Namespace
-
