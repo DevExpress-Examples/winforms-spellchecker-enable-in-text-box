@@ -19,7 +19,7 @@ Make sure that the "Copy to Output Directory" option for the dictionary files is
 
 * [Spell Checker Dictionaries](https://docs.devexpress.com/WindowsForms/8581/controls-and-libraries/spell-checker/dictionaries)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-spellchecker-enable-in-text-box&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-spellchecker-enable-in-text-box&~~~was_helpful=no)
 
